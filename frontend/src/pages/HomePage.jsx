@@ -19,7 +19,7 @@ const HomePage = () => {
   const [outgoingRequestsIds, setOutgoingRequestsIds] = useState(new Set());
 
   const { data: friends = [], isLoading: loadingFriends } = useQuery({
-    queryKey: ["friend"],
+    queryKey: ["friends"],
     queryFn: getUserFriends,
   });
 

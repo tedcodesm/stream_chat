@@ -15,7 +15,7 @@ const NotificationsPage = () => {
     mutationFn: acceptFriendRequest,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["friendRequests"] });
-      queryClient.invalidateQueries({ queryKey: ["friend"] });
+      queryClient.invalidateQueries({ queryKey: ["friends"] });
     },
   });
 
