@@ -13,7 +13,7 @@ const FriendCard = ({ friend }) => {
           <h3 className="font-semibold truncate">{friend.fullName}</h3>
         </div>
 
-        <div className="flex flex-wrap gap-1.5 mb-3">
+        {/* <div className="flex flex-wrap gap-1.5 mb-3">
           <span className="badge badge-secondary text-xs">
             {getLanguageFlag(friend.nativeLanguage)}
             Native: {friend.nativeLanguage}
@@ -22,7 +22,7 @@ const FriendCard = ({ friend }) => {
             {getLanguageFlag(friend.learningLanguage)}
             Learning: {friend.learningLanguage}
           </span>
-        </div>
+        </div> */}
 
         <Link to={`/chat/${friend._id}`} className="btn btn-outline w-full">
           Message

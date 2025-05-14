@@ -81,7 +81,7 @@ const HomePage = () => {
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Meet New People</h2>
                 <p className="opacity-70">
-                  Discover perfect language exchange partners based on your profile
+                  Discover perfect friends exchange partners based on your profile
                 </p>
               </div>
             </div>
