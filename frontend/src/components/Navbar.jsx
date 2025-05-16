@@ -32,15 +32,16 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-
-           <div className="pl-5">
-              <Link to="/" className="md:hidden flex items-center gap-1">
-                <ShipWheelIcon className="size-7 text-primary" />
-                <span className="text-xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary  tracking-wider">
-                  Strm
-                </span>
+          {!isChatPage && (
+            <div className="pl-5">
+              <Link to="/" className="flex items-center gap-2.5">
+                <ShipWheelIcon className="size-9 animate-spin text-primary" />
+                
               </Link>
             </div>
+          )}
+
+           
 
           <div className="flex items-center gap-3 sm:gap-4 ml-auto">
             <Link to={"/notifications"}>
